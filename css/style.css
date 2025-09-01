@@ -7,10 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding-top: 60px;
-    /* Adiciona um espaço para o menu fixo */
-}
 
 /* Estilo para a navegação fixa no topo */
 nav {
@@ -129,7 +125,6 @@ header,
 footer,
 section {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,9 +152,11 @@ section {
     background-color: #fff0f5;
 }
 
+
 /* Estilo do cabeçalho e rodapé */
 header {
     background-color: #fff;
+    margin-top: 60px;
     height: 100vh;
 }
 
@@ -181,4 +178,19 @@ footer {
 footer p {
     font-size: 0.9rem;
     color: #95a5a6;
+}
+
+p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    /* Alinha o texto, criando blocos mais organizados */
+}
+
+/* Estilo para os cabeçalhos das seções */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
