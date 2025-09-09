@@ -198,7 +198,8 @@
             </p>
             <p>
                 &emsp;&emsp;
-                Mesmo com as crises políticas e econômicas após 2016, que ameaçaram o Ministério da Cultura e afetaram os mecanismos de fomento, o
+                Mesmo com as crises políticas e econômicas após 2016, que ameaçaram o Ministério da Cultura e afetaram
+                os mecanismos de fomento, o
                 cinema brasileiro encontrou novas alternativas no meio digital, com custos mais acessíveis e a ampliação
                 da presença obrigatória de conteúdo nacional em canais pagos e, mais recentemente, nas discussões sobre
                 o streaming.
@@ -214,25 +215,26 @@
                 <div class="filme-card">
                     <img src="img/ainda-estou-aqui.jpg" alt="Ainda estou aqui">
                     <h3>Ainda estou aqui (2024)</h3>
-                    <p></p>
-                    <a href="#" class="detalhes-btn">Detalhes</a>
+
+                    <a class="detalhes-btn open-popup-btn" data-film-id="1"
+                        data-film-title="Ainda estou aqui">Detalhes</a>
                 </div>
                 <div class="filme-card">
                     <img src="img/cidade-de-deus.jpg" alt="Cidade de Deus">
                     <h3>Cidade de Deus (2002)</h3>
                     <p></p>
-                    <a href="#" class="detalhes-btn">Detalhes</a>
+                    <a class="detalhes-btn open-popup-btn" data-film-id="2"
+                        data-film-title="Cidade de Deus">Detalhes</a>
                 </div>
                 <div class="filme-card">
                     <img src="img/homem-com-h.jpg" alt="Homem com H">
                     <h3>Homem com H (2025)</h3>
                     <p></p>
-                    <a href="#" class="detalhes-btn">Detalhes</a>
+                    <a class="detalhes-btn open-popup-btn" data-film-id="3" data-film-title="Homem com H">Detalhes</a>
                 </div>
 
             </div>
         </section>
-
 
 
         <section id="ia-no-mundo-artistico">
@@ -282,6 +284,43 @@
     <footer>
         <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
     </footer>
+    <div id="movie-popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3 class="popup-title">Título do Filme</h3>
+            <img src="caminho-da-imagem.jpg" alt="Capa do Filme" class="popup-image">
+            <p class="popup-description">Aqui vai a sinopse e detalhes como ano, diretor, etc.</p>
+        </div>
+    </div>
+
+    <div id="1" style="display: none;">
+        <p>
+            Ainda Estou Aqui é um filme brasileiro, lançado em 2024, que conta a história real de Eunice Paiva, seu
+            marido
+            Rubens Paiva e seus filhos, no contexto da ditadura militar no Rio de Janeiro. A narrativa acompanha sua
+            luta
+            para descobrir o por que seu marido desapareceu e manter o seu legado vivo, trazendo tanto a dor de perder
+            alguém tão importante quanto a resistência diante da repressão.
+        </p>
+        <p>
+            A obra é um dos filmes brasileiros mais importantes já feitos, atuando como um documento histórico, trazendo
+            as
+            memórias de um período em que as pessoas foram silenciadas. A película cumpre um papel essencial para o
+            cinema,
+            dando voz para aqueles que foram calados pela violência da época e trazendo uma reflexão plausível.
+        </p>
+        <p>
+            A obra cinematográfica não só conseguiu resgatar uma parte fundamental da memória brasileira, como também
+            conseguiu furar a bolha do cinema brasileiro, alcançando relevância internacionalmente, especialmente com a
+            sua
+            participação no Oscar, com 3 indicações e o premio de melhor filme internacional. Essa conquista é
+            extremamente
+            simbólica, pois conseguiu se tornar popular tratando de um tema tão importante como a censura e a
+            intolerância
+            política. Desta forma, Ainda Estou aqui não é apenas um filme histórico, mas também um marco no cinema,
+            mostrando que o cinema brasileiro pode emocionar e provocar reflexão no mundo inteiro.
+        </p>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

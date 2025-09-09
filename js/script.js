@@ -22,3 +22,42 @@ navLinks.forEach(link => {
         menuToggle.setAttribute('aria-expanded', false);
     });
 });
+// ... (mantenha o código existente do menu toggle) ...
+
+// Lógica para o Pop-up
+const openPopupBtns = document.querySelectorAll('.open-popup-btn');
+const popupContainer = document.getElementById('movie-popup');
+const closeBtn = document.querySelector('.close-btn');
+
+openPopupBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        // Exibe o pop-up
+        popupContainer.style.display = 'flex';
+        // Aqui você pode carregar o conteúdo dinamicamente com base no `data-film-id`
+        // const filmId = button.getAttribute('data-film-id');
+        // console.log(`Abrir pop-up para o filme com ID: ${filmId}`);
+
+        const filmId = button.getAttribute('data-film-id');
+
+        const title = button.getAttribute('data-film-title') || "Título do Filme";
+        document.querySelector('.popup-title').innerText = title;
+ 
+        const texto = document.getElementById(filmId).innerHTML || "Descrição do filme não disponível.";
+
+        console.log(texto);
+        document.querySelector('.popup-description').innerHTML = texto;
+
+    });
+});
+
+// Fecha o pop-up ao clicar no botão 'X'
+closeBtn.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+});
+
+// Fecha o pop-up ao clicar fora dele
+window.addEventListener('click', (event) => {
+    if (event.target == popupContainer) {
+        popupContainer.style.display = 'none';
+    }
+});
