@@ -53,7 +53,7 @@ openPopupBtns.forEach(button => {
         document.querySelector('.popup-image').alt = `Capa do Filme: ${title}`;
 
         const author = button.getAttribute('data-film-author') || "Autor Desconhecido";
-        document.querySelector('.popup-author').innerText = `Foto: ${author}`;
+        document.querySelector('.popup-author').innerText = `Feito por: ${author}`;
 
     });
 });
