@@ -163,23 +163,17 @@ width: 100vw;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff; /* Altera a cor do texto para branco para maior contraste */
+    color: #333; /* Ajuste a cor do texto para uma que contraste com o fundo */
     padding: 20px;
     box-sizing: border-box;
 
-    /* Propriedades para a imagem de fundo */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/principal.jpg');
-    background-size: cover; /* Garante que a imagem cubra todo o espaço */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    
-    /* Efeito de rolagem da imagem (opcional) */
-    background-attachment: fixed;
+    /* Propriedade para a cor de fundo */
+    background-color: #f0f0f0; /* Substitua a imagem por uma cor sólida */
 }
 
 header h1 {
     font-size: 3rem;
-    color: #ffffff;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
 }
 
