@@ -1,9 +1,6 @@
 /* Estilos básicos para o corpo da página */
 body,
-body.no-scroll {
-    overflow: hidden;
-}
-
+ 
 html {
     margin: 0;
     padding: 0;
@@ -286,6 +283,7 @@ section h3 {
     max-height: 80vh;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .popup-scrollable-text {
