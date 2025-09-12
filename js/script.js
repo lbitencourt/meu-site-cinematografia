@@ -37,11 +37,13 @@ openPopupBtns.forEach(button => {
         // const filmId = button.getAttribute('data-film-id');
         // console.log(`Abrir pop-up para o filme com ID: ${filmId}`);
 
+        popupContainer.classList.add('popup-show');
+        document.body.classList.add('no-scroll');
         const filmId = button.getAttribute('data-film-id');
 
         const title = button.getAttribute('data-film-title') || "Título do Filme";
         document.querySelector('.popup-title').innerText = title;
- 
+
         const texto = document.getElementById(filmId).innerHTML || "Descrição do filme não disponível.";
 
         console.log(texto);
@@ -53,11 +55,15 @@ openPopupBtns.forEach(button => {
 // Fecha o pop-up ao clicar no botão 'X'
 closeBtn.addEventListener('click', () => {
     popupContainer.style.display = 'none';
+    popupContainer.classList.remove('popup-show');
+    document.body.classList.remove('no-scroll');
 });
 
 // Fecha o pop-up ao clicar fora dele
 window.addEventListener('click', (event) => {
     if (event.target == popupContainer) {
         popupContainer.style.display = 'none';
+        popupContainer.classList.remove('popup-show');
+        document.body.classList.remove('no-scroll');
     }
 });
