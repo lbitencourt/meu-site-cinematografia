@@ -1,6 +1,6 @@
 /* Estilos básicos para o corpo da página */
 body,
- 
+
 html {
     margin: 0;
     padding: 0;
@@ -119,6 +119,18 @@ nav a:hover {
     nav a {
         font-size: 1.5rem;
     }
+
+    .image-gallery {
+        flex-direction: column;
+        /* Em telas menores, as imagens ficam em uma única coluna */
+        align-items: center;
+    }
+
+    .gallery-item {
+        flex: 1 1 90%;
+        /* Ocupa quase toda a largura em telas pequenas */
+    }
+
 }
 
 /* Estilo para cada seção de tela inteira */
@@ -149,8 +161,7 @@ section {
     background-color: #e6e6fa;
 }
 
-#referencias { 
-}
+#referencias {}
 
 
 /* Estilo do cabeçalho e rodapé */
@@ -359,14 +370,60 @@ section h3 {
 }
 
 .list-items {
-    list-style: disc; /* Adiciona o estilo de bolinha padrão */
-    text-align: left; /* Alinha o texto da lista à esquerda */
+    list-style: disc;
+    /* Adiciona o estilo de bolinha padrão */
+    text-align: left;
+    /* Alinha o texto da lista à esquerda */
     max-width: 800px;
-    margin: 20px auto; /* Centraliza a lista na página */
+    margin: 20px auto;
+    /* Centraliza a lista na página */
     padding-left: 20px;
 }
 
 .list-items li {
     margin-bottom: 5px;
     line-height: 1.6;
+}
+
+/* Estilos para a Galeria de Imagens */
+.image-gallery {
+    display: flex;
+    /* Habilita o Flexbox */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    gap: 20px;
+    /* Espaço entre as imagens */
+    margin-top: 30px;
+    /* Espaço acima da galeria */
+    max-width: 1000px;
+    /* Limita a largura da galeria em telas grandes */
+    width: 90%;
+    /* Ajusta a largura da galeria */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33% - 40px);
+    /* Define o tamanho dos itens para 3 colunas */
+    min-width: 250px;
+    /* Largura mínima para cada item */
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
 }
