@@ -149,8 +149,7 @@ section {
     background-color: #e6e6fa;
 }
 
-#referencias {
-    background-color: #fff0f5;
+#referencias { 
 }
 
 
@@ -357,4 +356,17 @@ section h3 {
 .popup-description {
     font-size: 1rem;
     text-align: justify;
+}
+
+.list-items {
+    list-style: disc; /* Adiciona o estilo de bolinha padrão */
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza a lista na página */
+    padding-left: 20px;
+}
+
+.list-items li {
+    margin-bottom: 5px;
+    line-height: 1.6;
 }
