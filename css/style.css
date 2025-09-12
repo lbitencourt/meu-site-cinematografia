@@ -299,6 +299,20 @@ section h3 {
     margin: 0;
 }
 
+.popup-image-container {
+    width: 200px; /* Largura exata da imagem */
+    height: 264px; /* Altura exata da imagem */
+    overflow: hidden;
+    margin: 15px auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.popup-image {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner (200px) */
+    height: 100%; /* Faz a imagem ocupar 100% da altura do contêiner (264px) */
+    object-fit: contain; /* Garante que a imagem inteira seja visível, sem ser cortada */
+    border-radius: 5px;
+    display: block;
+}
 
 .close-btn {
     color: #aaa;
@@ -321,13 +335,7 @@ section h3 {
     color: #2c3e50;
     margin-top: 0;
 }
-
-.popup-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 0;
-}
+ 
 
 .popup-description {
     font-size: 1rem;

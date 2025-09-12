@@ -45,9 +45,12 @@ openPopupBtns.forEach(button => {
         document.querySelector('.popup-title').innerText = title;
 
         const texto = document.getElementById(filmId).innerHTML || "Descrição do filme não disponível.";
-
-        console.log(texto);
         document.querySelector('.popup-description').innerHTML = texto;
+
+
+        const imageUrl = button.getAttribute('data-film-img') || "https://via.placeholder.com/300x450?text=No+Image";
+        document.querySelector('.popup-image').src = imageUrl;
+        document.querySelector('.popup-image').alt = `Capa do Filme: ${title}`;
 
     });
 });
